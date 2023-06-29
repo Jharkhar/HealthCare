@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Sevva"
+        android:textColor="@color/Voilet1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCartPackageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/textViewCartPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Login"
+        android:textColor="@color/White2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLoginUsername"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextLoginUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/White2"
+        android:textColorHint="@color/White2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLoginPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCartPackageName"
+        app:layout_constraintStart_toStartOf="@+id/textViewCartPackageName" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/White2"
+        android:textColorHint="@color/White2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLoginUsername"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextLoginUsername" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/btn_bg"
+        android:text="Login"
+        android:textColorLink="#D66565"
+        app:backgroundTint="@color/Blue"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNewUser"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/editTextLoginPassword" />
+
+    <TextView
+        android:id="@+id/textViewNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Register For New user"
+        android:textColor="@color/White2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
